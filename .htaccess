@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule  ^$ public/    [L]
+	RewriteRule  (.*) public/$1 [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
