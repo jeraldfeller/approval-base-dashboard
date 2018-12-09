@@ -42,6 +42,7 @@
             </a>
         </li>
 
+
         {# Councils #}
         {% set isActive = (_ns == "Controllers\Admin" and _cn == "councils" and (_an == "index" or _an == "")) %}
         <li class="nav-item">
@@ -50,6 +51,20 @@
                 <span class="title">Councils</span>
             </a>
         </li>
+
+        {# Poi #}
+        {% set isActive = (_ns == "Controllers\Admin" and _cn == "councils" and (_an == "index" or _an == "")) %}
+        <li class="nav-item">
+            <a href="#" data-toggle="sidebar" class="{% if isActive == true %} active{% endif %}">
+                <i class="ion-map"></i> <span>POI</span>
+                <i class="fa fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+                <li><a href="{{ url("poi/primary") }}">Primary</a></li>
+                <li><a href="{{ url("poi/secondary") }}">Secondary</a></li>
+            </ul>
+        </li>
+
     </ul>
 </div>
 

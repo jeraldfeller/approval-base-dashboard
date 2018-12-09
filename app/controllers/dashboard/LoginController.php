@@ -60,7 +60,7 @@ class LoginController extends _BaseController {
                 }
                 else {
                     if($user->getSeenModal() == true){
-                        return $this->response->redirect('leads', false, 302);
+                        return $this->response->redirect('search', false, 302);
                     }else{
                         return $this->response->redirect('search', false, 302);
                     }

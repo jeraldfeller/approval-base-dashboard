@@ -31,12 +31,12 @@ return new \Phalcon\Config([
         'unstarred' => '&#9734;'
     ],
     'mailgun' => [
-        'mailgunApiKey' => 'd3ab997e0010bb44a139827728c2cf0c-059e099e-8dc711fa',
+        'mailgunApiKey' => 'apikey',
         'mailgunDomain' => 'approvalbase.com',
         'mailFromName' => 'Approval Base',
         'mailFromEmail' => 'oscar@willowcapital.com.au',
         'mailDigestSubject' => 'Alert Notification for ' . date('d F Y')
     ],
-    'googleMapAPI' => 'AIzaSyBeoB0tbJH7cwyD4i8cD6BPKzBB6-M4rX4',
+    'googleMapAPI' => 'apikey',
     'adminEmail' => 'jeraldfeller@gmail.com'
 ]);

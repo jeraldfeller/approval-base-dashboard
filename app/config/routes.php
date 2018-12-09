@@ -84,9 +84,13 @@ $dashboardGroup->addGet('/cron/:action', ['controller' => 'cron', 'action' => 1]
 $dashboardGroup->add('/datatables/:action', ['controller' => 'datatables', 'action' => 1]);
 
 
+// POI
+$dashboardGroup->addGet('/poi', ['controller' => 'poi', 'action' => 'index']);
+$dashboardGroup->add('/poi/:action', ['controller' => 'poi', 'action' => 1]);
 
 // Search
 $dashboardGroup->addGet('/search', ['controller' => 'search', 'action' => 'index']);
+$dashboardGroup->addGet('/search/map', ['controller' => 'search', 'action' => 'map']);
 $dashboardGroup->add('/search/:action', ['controller' => 'search', 'action' => 1]);
 $router->mount($dashboardGroup);
 

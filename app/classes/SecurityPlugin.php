@@ -56,6 +56,7 @@ class SecurityPlugin extends Plugin {
                 'Aiden\Controllers:settings' => ['index', 'support', 'updateProfile', 'contact', 'billing', 'stripeApi', 'updateSeen', 'notifications', 'notificationsUpdate', 'save'],
                 'Aiden\Controllers:councils' => ['index', 'subscribe', 'unsubscribe', 'bulkSubscribe', 'bulkUnsubscribe'],
                 'Aiden\Controllers:cron' => ['checkSubscription', 'alertNotification', 'execScanPhrase'],
+                'Aiden\Controllers:poi' => ['index', 'primary', 'secondary']
 
             ];
 
